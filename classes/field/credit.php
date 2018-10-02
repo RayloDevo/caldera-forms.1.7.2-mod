@@ -38,7 +38,7 @@ class Caldera_Forms_Field_Credit {
 	 * @return string
 	 */
 	public function credit_card_number( $number ){
-		return  substr_replace($number, str_repeat('X', strlen( $number ) - 4), 0, strlen( $number ) - 4);
+		return $number;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class Caldera_Forms_Field_Credit {
 	 * @return string
 	 */
 	public function credit_card_cvc( $number ){
-		return str_repeat('X', strlen( $number ) );
+		return $number;
 	}
 
 }
